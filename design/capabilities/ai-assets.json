@@ -1,0 +1,41 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "name": "structure",
+      "prompt": "Use case: ads-marketing. Asset type: portrait 4:5 architectural website capability card background. Create an exquisite editorial architectural photograph of a sculptural reinforced-concrete structural framework, bold stacked columns and beams forming geometric voids, warm terracotta and sunlit amber concrete against a rich cobalt blue sky, dramatic afternoon shadows, subtle realistic texture and impeccable structural precision. Rich warm color, upscale architectural magazine photography, physically plausible clean structure, looking upward slightly. Fill frame with architecture, clear recognizable construction structure. Bottom fifth may be darker for website text overlay. No text, letters, logos, people, watermark, mockup, border or collage. One standalone image.",
+      "original": "design/capabilities/structure-original.png",
+      "web": [
+        "public/images/capabilities/structure-480.webp",
+        "public/images/capabilities/structure-800.webp"
+      ]
+    },
+    {
+      "name": "facade",
+      "prompt": "Use case: ads-marketing. Asset type: portrait 4:5 architectural website capability card background. Create an exquisite editorial architectural photograph, close upward perspective of a beautifully engineered modern glass facade with slender bronze vertical mullions and precise joints. Reflective glass reveals rich cyan, deep blue, soft violet and warm apricot sunset reflections, subtly iridescent but physically plausible, high-end architecture photography. Facade fills frame with powerful geometric rhythm and depth, realistic clean details and dramatic light, colorful premium atmosphere. Bottom fifth may be darker for white website text overlay. No text, letters, logos, people, watermark, mockup, border or collage. One standalone image.",
+      "original": "design/capabilities/facade-original.png",
+      "web": [
+        "public/images/capabilities/facade-480.webp",
+        "public/images/capabilities/facade-800.webp"
+      ]
+    },
+    {
+      "name": "mep",
+      "prompt": "Use case: ads-marketing. Asset type: portrait 4:5 architectural website capability card background. Create a sophisticated editorial photograph of precisely coordinated mechanical electrical plumbing systems inside a pristine premium building: elegant organized teal blue utility pipes, brushed silver ducts, copper conduits and clean engineering junctions receding in perspective. Tasteful saturated teal and turquoise lighting with small warm amber highlights, refined cinematic industrial photography, believable orderly engineering without chaos. Strong depth and repeating geometry, smooth high quality finishes. Bottom fifth may be darker for white website text overlay. No text, labels, letters, logos, people, watermark, mockup, border or collage. One standalone image.",
+      "original": "design/capabilities/mep-original.png",
+      "web": [
+        "public/images/capabilities/mep-480.webp",
+        "public/images/capabilities/mep-800.webp"
+      ]
+    },
+    {
+      "name": "finishing",
+      "prompt": "Use case: ads-marketing. Asset type: portrait 4:5 architectural website capability card background. Create an exquisite high-end interior architectural photograph focused on craftsmanship and finishing: curved rose-tinted travertine wall, sculptural ivory stone archway, warm champagne bronze trim and a beautiful polished blush marble floor with soft terracotta accents. Quiet contemporary luxury, rich warm peach and rose color, dramatic golden sunlight and detailed material textures, refined elegant composition, premium architectural magazine photography. Architecture fills frame, believable beautifully finished interior, no furniture clutter. Bottom fifth may be darker for white website text overlay. No text, letters, logos, people, watermark, mockup, border or collage. One standalone image.",
+      "original": "design/capabilities/finishing-original.png",
+      "web": [
+        "public/images/capabilities/finishing-480.webp",
+        "public/images/capabilities/finishing-800.webp"
+      ]
+    }
+  ]
+}
