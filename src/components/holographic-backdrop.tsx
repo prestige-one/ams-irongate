@@ -27,7 +27,7 @@ export function HolographicBackdrop(){
   },[]);
   return <>
     <div className="ams-hero-art" aria-hidden="true">
-      <img ref={imageRef} className="ams-hero-image" src="/images/monochrome-building-1600.webp" srcSet="/images/monochrome-building-720.webp 720w, /images/monochrome-building-1080.webp 1080w, /images/monochrome-building-1600.webp 1600w, /images/monochrome-building-1882.webp 1882w" sizes="(max-width:760px) 190vw, 100vw" width="1882" height="836" fetchPriority="high" alt="" />
+      <img ref={imageRef} className="ams-hero-image" src="/images/monochrome-building.webp" srcSet="/images/monochrome-building-720.webp 720w, /images/monochrome-building-1080.webp 1080w, /images/monochrome-building-1600.webp 1600w, /images/monochrome-building-1882.webp 1882w" sizes="(max-width:760px) 190vw, 100vw" width="1882" height="836" fetchPriority="high" alt="" />
       <canvas ref={canvasRef} className={`ams-holographic-canvas${ready?' ams-holographic-ready':''}`} />
     </div>
     <div className="ams-hero-shade" aria-hidden="true" />

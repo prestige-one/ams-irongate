@@ -1,0 +1,19 @@
+/* Shared inner-page hero, plus the About story layout. */
+.ams-hero-centered.ams-page-hero{position:relative;isolation:isolate;display:grid;grid-template-rows:auto 1fr;width:100%;height:auto;min-height:600px;max-height:none;background:#0d0f10;--ams-backdrop-shade:linear-gradient(90deg,#000b,#0009 50%,#000b);--ams-backdrop-position:center 58%}
+.ams-page-hero-content{align-self:center;width:min(900px,86%);margin:0 auto;padding:64px 0 88px;text-align:center}
+.ams-page-hero-content>.ams-kicker{justify-content:center;border:0;background:none;backdrop-filter:none;border-radius:0;padding:0;margin:0 0 28px}
+.ams-hero-centered.ams-page-hero h1{max-width:none;font-size:46px;line-height:1.2;letter-spacing:-.035em;margin:0 0 30px;color:#fff}
+.ams-hero-centered.ams-page-hero h1 em{font-style:normal;color:#f6a137}
+.ams-page-hero-description{max-width:630px;margin:0 auto;font-size:15px;line-height:1.85;color:#ece8e2;text-wrap:pretty}
+.ams-about-page .ams-story-section{background:#000}
+.ams-about-overview-reversed>.ams-about-visual{grid-column:2;grid-row:1}
+.ams-about-overview-reversed>.ams-about-content{grid-column:1;grid-row:1}
+.ams-story-section .ams-about-content{padding-bottom:18px}
+.ams-story-section .ams-about-copy p{max-width:570px}
+:is(.ams-about-page,.ams-services-page) .ams-primary-nav a[aria-current="page"]{background:#ffffff15;color:#fff}
+:is(.ams-about-page,.ams-services-page) .ams-primary-nav a[aria-current="page"]:hover{background:#fff;color:#000}
+@media(max-width:1100px){.ams-hero-centered.ams-page-hero{min-height:560px}.ams-hero-centered.ams-page-hero h1{font-size:40px}.ams-page-hero-content{padding-block:64px 76px}}
+@media(max-width:760px){.ams-hero-centered.ams-page-hero{min-height:600px}.ams-page-hero-content{padding:58px 0 68px}.ams-hero-centered.ams-page-hero h1{font-size:32px;line-height:1.2;margin-bottom:28px}.ams-page-hero-description{font-size:14px;line-height:1.8}.ams-page-hero-content>.ams-kicker{margin-bottom:26px}.ams-about-overview-reversed>.ams-about-content{grid-column:1;grid-row:1}.ams-about-overview-reversed>.ams-about-visual{grid-column:1;grid-row:2}.ams-story-section .ams-about-content{padding-bottom:0}.ams-story-section .ams-about-figures{margin-top:30px}}
+@media(max-width:380px){.ams-hero-centered.ams-page-hero h1{font-size:29px}.ams-page-hero-description{font-size:13px}}
+
+.ams-values-section .ams-services-overview-heading>.ams-kicker{justify-content:center;margin:0 0 26px}

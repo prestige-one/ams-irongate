@@ -20,8 +20,12 @@ export function createHolographicRenderer(canvas: HTMLCanvasElement, image: HTML
       vec2 p=vec2(uv.x,1.-uv.y);
       float shape=building(p), floorDepth=smoothstep(.48,1.,p.y)*.84;
 vec3 color=texture2D(u_image,clamp(uv,.002,.998)).rgb;
-      float scan=.72-fract(.42+u_time*.13)*.64;
-      float band=exp(-pow((p.y-scan)/.022,2.));
+      // Two staggered passes halve the recurrence interval without changing travel speed.
+      float phase=.42+u_time*.13;
+      float scan=.72-fract(phase)*.64;
+      float nextScan=.72-fract(phase+.5)*.64;
+      float distanceToScan=min(abs(p.y-scan),abs(p.y-nextScan));
+      float band=exp(-pow(distanceToScan/.022,2.));
       float detail=smoothstep(.19,.75,max(color.b,color.g));
       color+=vec3(.72)*band*detail*shape*.65*u_motion;
       color+=vec3(.10)*detail*shape*(.65+.35*sin(u_time*1.4+p.y*9.))*u_motion;

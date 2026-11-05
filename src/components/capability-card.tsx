@@ -8,7 +8,7 @@ type CapabilityCardProps = {
 };
 
 export function CapabilityCard({ number, title, description, image, index }: CapabilityCardProps) {
-  return <article className="ams-capability">
+  return <article className="ams-capability" data-ams-reveal="up" data-ams-delay={index * 140}>
     <img className="ams-capability-image"
       src={'/images/capabilities/' + image + '-467.webp'}
       srcSet={'/images/capabilities/' + image + '-320.webp 320w, /images/capabilities/' + image + '-467.webp 467w'}

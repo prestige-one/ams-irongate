@@ -1,0 +1,9 @@
+/* Two concise statements, sharing the page wrapper and spacing rhythm. */
+.ams-purpose-section{width:100%;padding-inline:4%;color:#f5f5f3}
+.ams-purpose-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:1480px;margin-inline:auto}
+.ams-purpose-card{min-width:0;padding:40px;border:1px solid #ffffff1c;border-radius:5px;background:linear-gradient(135deg,#ffffff04,#000000e8 65%)}
+.ams-purpose-card>.ams-kicker{letter-spacing:.1em;font-size:18px!important;line-height:1.6;margin:0 0 30px}
+.ams-purpose-card>p{max-width:570px;margin:0;font-size:20px;line-height:1.4;font-weight:400;letter-spacing:-.02em;color:#eeece6;text-wrap:pretty}
+.ams-main.ams-about-page>.ams-values-section{background:var(--ams-section-black)}
+@media(max-width:1100px){.ams-purpose-grid{gap:22px}.ams-purpose-card{padding:32px}}
+@media(max-width:760px){.ams-purpose-section{padding-inline:7%}.ams-purpose-grid{grid-template-columns:minmax(0,1fr);gap:22px}.ams-purpose-card{padding:28px 24px}.ams-purpose-card>.ams-kicker{margin-bottom:22px}}

@@ -1,0 +1,14 @@
+/* Shared section colors and spacing, starting with About AMS. */
+.ams-main{--ams-section-black:#000;--ams-section-charcoal:#0d0f10}
+.ams-main>:is(.ams-about-section,.ams-difference,.ams-process-section,.ams-faq-section){background:var(--ams-section-black)}
+.ams-main>:is(.ams-purpose-section,.ams-capabilities,.ams-services-overview,.ams-expertise-section,.ams-cta-section){background:var(--ams-section-charcoal)}
+.ams-main>:is(.ams-about-section,.ams-purpose-section,.ams-capabilities,.ams-difference,.ams-services-overview,.ams-process-section,.ams-expertise-section,.ams-faq-section,.ams-cta-section){padding-block:80px}
+.ams-main .ams-capabilities-baseline{padding-bottom:0}
+.ams-main>.ams-footer-wrap{max-width:none;background:var(--ams-section-black)}
+.ams-main>.ams-footer-wrap>.ams-footer{max-width:1480px;margin-inline:auto}
+@media(max-width:1100px){
+ .ams-main>:is(.ams-about-section,.ams-purpose-section,.ams-capabilities,.ams-difference,.ams-services-overview,.ams-process-section,.ams-expertise-section,.ams-faq-section,.ams-cta-section){padding-block:64px}
+}
+@media(max-width:760px){
+ .ams-main>:is(.ams-about-section,.ams-purpose-section,.ams-capabilities,.ams-difference,.ams-services-overview,.ams-process-section,.ams-expertise-section,.ams-faq-section,.ams-cta-section){padding-block:56px}
+}

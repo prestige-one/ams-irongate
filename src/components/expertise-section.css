@@ -1,0 +1,50 @@
+/* Five architectural panels: CSS expansion, no animation library or JavaScript state. */
+.ams-expertise-section{width:100%;padding:64px 4% 72px;background:#050505;scroll-margin-top:28px}
+.ams-expertise-inner{max-width:1480px;margin-inline:auto}
+.ams-expertise-heading{text-align:center;margin:0 auto 38px}
+.ams-expertise-heading h2{font-size:36px;line-height:1.2;letter-spacing:-.035em;color:#f3f0ea;margin:0}
+.ams-expertise-panels{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+.ams-expertise-panel{position:relative;isolation:isolate;flex:1 1 0;min-width:0;height:clamp(440px,36vw,550px);overflow:hidden;border:1px solid #ffffff30;border-radius:8px;background:#121313;outline:none;transition:flex-grow .65s cubic-bezier(.22,1,.36,1),border-color .3s}
+.ams-expertise-panel:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#0000000d 10%,transparent 33%,#00000045 53%,#000000d9 78%,#000 100%)}
+.ams-expertise-image{position:absolute;inset:0;z-index:-2;display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.ams-expertise-copy{position:absolute;bottom:0;left:0;right:0;padding:26px 22px;color:#f5f4ef;text-shadow:0 2px 14px #0008}
+.ams-expertise-copy h3{font-size:20px;line-height:1.3;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.ams-expertise-copy>p{font-size:14px;line-height:1.65;color:#e0e0dc;min-height:4.95em;margin:0;text-wrap:pretty}
+.ams-expertise-panel:focus-visible{border-color:#f0b45b;outline:2px solid #f0b45b;outline-offset:-2px}
+.ams-expertise-panel:focus-visible .ams-expertise-image{transform:scale(1.045)}
+.ams-expertise-touch-hint{display:none}
+@media(min-width:1001px){
+ .ams-expertise-panel:focus-visible{flex-grow:1.7}
+}
+@media(min-width:1001px) and (hover:hover) and (pointer:fine){
+ .ams-expertise-panel:hover{flex-grow:1.7;border-color:#e6a54b}
+ .ams-expertise-panel:hover .ams-expertise-image{transform:scale(1.045)}
+}
+@media(max-width:1200px) and (min-width:1001px){
+ .ams-expertise-panels{gap:10px}
+ .ams-expertise-copy{padding:22px 17px}
+ .ams-expertise-copy h3{font-size:18px}
+ .ams-expertise-copy>p{font-size:13px}
+}
+@media(max-width:1000px){
+ .ams-expertise-heading h2{font-size:32px}
+ .ams-expertise-panels{overflow-x:auto;overflow-y:hidden;gap:14px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#9f8460 #ffffff12;padding-bottom:12px}
+ .ams-expertise-panel{flex:0 0 44%;height:460px;scroll-snap-align:start}
+ .ams-expertise-copy{padding:26px}
+ .ams-expertise-copy>p{min-height:0}
+ .ams-expertise-touch-hint{display:block;margin:14px 0 0;text-align:right;font-size:10px;line-height:1.5;letter-spacing:.08em;color:#b9b6af}
+}
+@media(max-width:600px){
+ .ams-expertise-section{padding:48px 7% 52px}
+ .ams-expertise-heading{margin-bottom:28px}
+ .ams-expertise-heading h2{font-size:29px}
+ .ams-expertise-panel{flex-basis:86%;height:420px}
+ .ams-expertise-copy{padding:24px 22px}
+ .ams-expertise-copy h3{font-size:21px}
+ .ams-expertise-copy>p{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .ams-expertise-panel,.ams-expertise-image{transition:none}
+ .ams-expertise-panel:focus-visible .ams-expertise-image,.ams-expertise-panel:hover .ams-expertise-image{transform:none}
+ .ams-expertise-panels{scroll-behavior:auto}
+}

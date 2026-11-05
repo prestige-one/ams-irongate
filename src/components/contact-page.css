@@ -1,0 +1,39 @@
+/* Contact page: clear details and a compact demo enquiry form on black. */
+.ams-contact-section{width:100%;padding:80px 4%;background:#000;color:#f5f5f3}
+.ams-contact-inner{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;max-width:1200px;margin-inline:auto;align-items:start}
+.ams-contact-details{min-width:0;padding:12px 0}
+.ams-contact-details>.ams-kicker{margin:0 0 26px}
+.ams-contact-details>h2{font-size:36px;line-height:1.2;letter-spacing:-.035em;margin:0 0 28px;color:#f3f1eb}
+.ams-contact-details>h2 em{font-style:normal;color:#f6a137}
+.ams-contact-intro{font-size:14px;line-height:1.8;color:#bdbdb8;margin:0 0 30px;max-width:400px}
+.ams-contact-info{margin:0;padding:0}
+.ams-contact-info>div{padding:19px 0;border-top:1px solid #ffffff20}
+.ams-contact-info>div:last-child{border-bottom:1px solid #ffffff20}
+.ams-contact-info dt{font-size:10px;font-weight:500;line-height:1.6;letter-spacing:.18em;text-transform:uppercase;color:#a5a5a0;margin:0 0 7px}
+.ams-contact-info dd{margin:0;font-size:13px;line-height:1.8;color:#e5e2dc;overflow-wrap:anywhere}
+.ams-contact-info a{transition:color .2s}
+.ams-contact-info a:hover{color:#f6a137}
+.ams-contact-form-panel{min-width:0;background:#0d0f10;border:1px solid #ffffff14;border-radius:5px;padding:36px}
+.ams-contact-form-panel>h3{margin:0 0 12px;font-size:25px;line-height:1.3;letter-spacing:-.025em;color:#f5f3ed}
+.ams-contact-form-intro{font-size:12px;line-height:1.7;color:#aaa9a4;margin:0 0 25px}
+.ams-contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}
+.ams-contact-field{min-width:0}
+.ams-contact-field-wide{grid-column:1/-1}
+.ams-contact-field label{display:block;font-size:10px;line-height:1.6;letter-spacing:.12em;text-transform:uppercase;color:#ccc9c2;margin-bottom:8px}
+.ams-contact-field :is(input,select,textarea){display:block;width:100%;min-width:0;border:1px solid #ffffff29;border-radius:2px;background:#000;color:#f3f0ea;font-family:inherit;font-size:14px;line-height:1.5;padding:12px 13px;transition:border-color .2s,outline-color .2s;color-scheme:dark}
+.ams-contact-field :is(input,select){min-height:46px}
+.ams-contact-field textarea{resize:vertical;min-height:136px;max-height:420px}
+.ams-contact-field :is(input,select,textarea):focus-visible{border-color:#f6a137;outline:2px solid #f6a13733;outline-offset:1px}
+.ams-contact-submit{margin-top:24px;min-height:48px;padding:14px 24px;gap:22px;letter-spacing:0}
+.ams-contact-submit:disabled{cursor:default;transform:none;opacity:.7}
+.ams-contact-success{margin-top:22px;padding:18px;border:1px solid #f6a13755;border-radius:4px;background:#f6a13708;font-size:13px;line-height:1.7;color:#e9e5dc;outline-offset:3px}
+.ams-contact-success strong{display:block;font-size:14px;font-weight:700;color:#f3eee3}
+.ams-contact-success p{margin:6px 0 0}
+.ams-site-footer-contact-column address{overflow-wrap:anywhere}
+@media(max-width:1100px){.ams-contact-section{padding-block:64px}.ams-contact-inner{gap:40px}.ams-contact-form-panel{padding:28px}.ams-contact-details>h2{font-size:32px}}
+@media(max-width:900px){.ams-contact-inner{grid-template-columns:minmax(0,1fr);gap:36px;max-width:680px}.ams-contact-details{padding:0}.ams-contact-info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px}.ams-contact-info>div:nth-last-child(2){border-bottom:1px solid #ffffff20}.ams-contact-intro{max-width:540px}}
+@media(max-width:760px){.ams-contact-section{padding:56px 7%}.ams-contact-details>h2{font-size:30px}.ams-contact-form-panel{padding:26px 22px}.ams-contact-info{grid-template-columns:minmax(0,1fr);column-gap:0}.ams-contact-info>div:nth-last-child(2){border-bottom:0}.ams-contact-fields{gap:18px 14px}}
+@media(max-width:480px){.ams-contact-fields{grid-template-columns:minmax(0,1fr)}.ams-contact-form-panel{padding:24px 18px}.ams-contact-form-panel>h3{font-size:23px}.ams-contact-details>h2{font-size:29px}}
+
+.ams-contact-form-fields{border:0;padding:0;margin:0;min-width:0}
+.ams-enquire-button{text-transform:uppercase}
