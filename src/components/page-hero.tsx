@@ -8,7 +8,7 @@ import { TitleFrame } from './title-frame';
 export function PageHero({ page, titleId, kicker, title, description, actions }: {
   page: Exclude<AmsPage, 'home'>; titleId: string; kicker: string; title: ReactNode; description: string; actions?: ReactNode;
 }) {
-  return <section className={'ams-hero-centered ams-page-hero ams-' + page + '-hero'} id="ams-top" aria-labelledby={titleId}>
+  return <section className={'ams-hero-centered ams-page-hero ams-' + page + '-hero'} id="top" aria-labelledby={titleId}>
       <BuildingBackdrop priority />
       <SiteHeader page={page} />
       <div className="ams-page-hero-content">

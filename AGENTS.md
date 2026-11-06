@@ -57,3 +57,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Vendor sign in
 - /sign-in and /forgot-password use shared PageHero and a reusable black vendor auth card. Login preserves the old API contract, secure vendor cookie and /vendor redirect.
 - The dashboard summary needs the authenticated JSON bridge supplied in integrations/legacy-vendor-dashboard installed on the separately deployed legacy backend. Do not invent vendor status or expose staff/internal data.
+
+## Public anchor URLs
+- Public section/service/registration fragment IDs and links omit the ams- prefix (for example #top, #values and /contact#contact-form). Preserve ams- on CSS classes, internal form controls and accessibility-only IDs.
+
+## Home comparison preview
+- The approved Render vs Reality comparison now appears on / and /home-preview. Preserve the original ApproachSection roadmap component for reuse on other pages. Reuse HomePage and shared constructionStages. Comparison uses the supplied actual-image/render-image WebPs, optimized responsive variants and a dependency-free accessible drag control. Public anchor remains #process.

@@ -4,7 +4,7 @@ import { TitleFrame } from './title-frame';
 import { amsCompanyFigures } from '@/lib/company-figures';
 
 export function OurStorySection() {
-  return <section className="ams-about-section ams-story-section" id="ams-story" aria-labelledby="ams-story-title">
+  return <section className="ams-about-section ams-story-section" id="story" aria-labelledby="ams-story-title">
     <ArchitecturalSplit imageRight image={{ src: '/images/about-our-story.webp', srcSet: '/images/about-our-story-480.webp 480w, /images/about-our-story.webp 1000w', width: 1000, height: 800, alt: 'Concrete and steel building framework under construction at sunset beside the Dubai skyline' }}>
       <p className="ams-kicker" data-ams-reveal="up">OUR STORY</p>
       <h2 id="ams-story-title" data-ams-reveal="up" data-ams-delay="120"><TitleFrame>Founded on a simple belief:<br />build it right.</TitleFrame></h2>

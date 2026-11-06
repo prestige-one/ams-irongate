@@ -35,7 +35,7 @@ export function ContactForm() {
   return <div className="ams-contact-form-panel" data-ams-reveal="up" data-ams-delay="120">
     <h3 id="ams-contact-form-title">Start a project</h3>
     <p className="ams-contact-form-intro">Tell us a little about your plans. Fields marked * are required.</p>
-    <form id="ams-contact-form" aria-labelledby="ams-contact-form-title" onSubmit={submit} onInput={event => {
+    <form id="contact-form" aria-labelledby="ams-contact-form-title" onSubmit={submit} onInput={event => {
       if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement) event.target.setCustomValidity('');
       if (submitted) setSubmitted(false);
     }}>

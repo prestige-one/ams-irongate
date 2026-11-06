@@ -116,7 +116,7 @@ export function VendorRegistrationForm() {
   </div></section>;
 
   return <section className="ams-registration-section" aria-label="Vendor application form">
-    <div className="ams-registration-panel" id="ams-registration-form" ref={topRef}>
+    <div className="ams-registration-panel" id="registration-form" ref={topRef}>
       <form noValidate onSubmit={submit} aria-labelledby="ams-reg-step-title" aria-busy={!!busy}>
         <fieldset className="ams-reg-fieldset" disabled={!ready || !!busy}>
           <ol className="ams-reg-progress" aria-label="Registration progress">

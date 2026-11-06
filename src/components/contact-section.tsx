@@ -3,7 +3,7 @@ import { ContactForm } from './contact-form';
 import { amsContact } from '@/lib/contact-details';
 
 export function ContactSection() {
-  return <section className="ams-contact-section" id="ams-contact" aria-labelledby="ams-contact-title">
+  return <section className="ams-contact-section" id="contact" aria-labelledby="ams-contact-title">
     <div className="ams-contact-inner">
       <div className="ams-contact-details" data-ams-reveal="up">
         <p className="ams-kicker">CONTACT US</p>

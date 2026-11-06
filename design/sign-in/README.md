@@ -17,4 +17,4 @@ No real vendor testimonial or completed project is implied.
 Both columns now sit flush inside a single rounded, bordered wrapper. Inner panels have no independent border, radius or shadow; a subtle divider separates them. Mobile retains the same shared container with the form above the image.
 
 ## Inline recovery
-Forgot password switches the existing right-hand panel to email recovery without leaving the page. Back to sign in restores the login panel. The direct /forgot-password URL also uses the same two-column wrapper.
+Forgot password navigates to /forgot-password with client-side routing and retains the shared two-column panel layout and scroll position. Back to sign in navigates to /sign-in. The URL, direct loads, refresh and browser history all match the visible form; changing routes resets prior credentials and confirmation/error state.

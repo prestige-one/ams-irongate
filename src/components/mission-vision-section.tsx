@@ -11,7 +11,7 @@ function PurposeCard({ id, title, statement, index }: (typeof commitments)[numbe
 }
 
 export function MissionVisionSection() {
-  return <section className="ams-purpose-section" id="ams-mission-vision" aria-label="Our mission and vision">
+  return <section className="ams-purpose-section" id="mission-vision" aria-label="Our mission and vision">
     <div className="ams-purpose-grid">
       {commitments.map((commitment, index) => <PurposeCard key={commitment.id} {...commitment} index={index} />)}
     </div>

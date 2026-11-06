@@ -33,7 +33,7 @@ export function CapabilitiesSection() {
   }, []);
 
 
-  return <section className="ams-capabilities" id="ams-capabilities" aria-labelledby="ams-capabilities-title">
+  return <section className="ams-capabilities" id="capabilities" aria-labelledby="ams-capabilities-title">
     <div className="ams-capabilities-inner">
       <div className="ams-capabilities-heading" data-ams-reveal="up">
         <div><p className="ams-kicker">FULL-SCOPE CAPABILITY</p><h2 id="ams-capabilities-title"><TitleFrame>Precision at every level.</TitleFrame></h2></div>

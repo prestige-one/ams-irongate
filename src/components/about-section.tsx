@@ -6,7 +6,7 @@ import { ArrowIcon } from './arrow-icon';
 import { AnimatedFigures } from './animated-figures';
 
 export function AboutSection() {
-  return <section className="ams-about-section" id="ams-about" aria-labelledby="ams-about-title">
+  return <section className="ams-about-section" id="about" aria-labelledby="ams-about-title">
     <ArchitecturalSplit>
         <p className="ams-kicker" data-ams-reveal="up">ABOUT AMS IRONGATE</p>
         <h2 id="ams-about-title" data-ams-reveal="up" data-ams-delay="120"><TitleFrame>Built on precision.<br />Defined by delivery.</TitleFrame></h2>

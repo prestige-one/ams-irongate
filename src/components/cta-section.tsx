@@ -3,7 +3,7 @@ import { TitleFrame } from './title-frame';
 import { CtaActions } from './cta-actions';
 
 export function CtaSection() {
-  return <section className="ams-cta-section" id="ams-build-with-us" aria-labelledby="ams-cta-title">
+  return <section className="ams-cta-section" id="build-with-us" aria-labelledby="ams-cta-title">
     <BuildingBackdrop />
     <div className="ams-cta-content" data-ams-reveal="up" data-ams-reveal-viewport="full">
       <p className="ams-kicker">BUILD WITH US</p>

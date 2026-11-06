@@ -13,7 +13,7 @@ const documents = [
 ];
 
 export function VendorPreparation() {
-  return <section className="ams-vendor-prep" id="ams-vendor-preparation" aria-labelledby="ams-vendor-preparation-title">
+  return <section className="ams-vendor-prep" id="vendor-preparation" aria-labelledby="ams-vendor-preparation-title">
     <div className="ams-vendor-prep-inner">
       <div className="ams-vendor-prep-copy" data-ams-reveal="up">
         <p className="ams-kicker">BEFORE YOU START</p>

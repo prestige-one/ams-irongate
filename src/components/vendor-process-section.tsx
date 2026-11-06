@@ -9,7 +9,7 @@ const stages = [
 ];
 
 export function VendorProcessSection() {
-  return <section className="ams-process-section ams-vendor-process" id="ams-vendor-process" aria-labelledby="ams-vendor-process-title">
+  return <section className="ams-process-section ams-vendor-process" id="vendor-process" aria-labelledby="ams-vendor-process-title">
     <div className="ams-process-inner">
       <header className="ams-process-heading" data-ams-reveal="up" data-ams-reveal-viewport="full">
         <p className="ams-kicker">HOW IT WORKS</p>

@@ -10,7 +10,7 @@ const expertise = [
 ];
 
 export function ExpertiseSection() {
-  return <section className="ams-expertise-section" id="ams-expertise" aria-labelledby="ams-expertise-title">
+  return <section className="ams-expertise-section" id="expertise" aria-labelledby="ams-expertise-title">
     <div className="ams-expertise-inner">
       <header className="ams-expertise-heading" data-ams-reveal="up" data-ams-reveal-viewport="full">
         <h2 id="ams-expertise-title"><TitleFrame>Areas of expertise</TitleFrame></h2>

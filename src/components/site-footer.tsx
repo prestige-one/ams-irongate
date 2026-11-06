@@ -18,21 +18,21 @@ const companyLinks: readonly FooterLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Our Landmarks' },
-  { label: 'How We Work', href: '#ams-process' },
-  { label: 'FAQ', href: '#ams-faq' },
+  { label: 'How We Work', href: '#process' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
 const vendorLinks = [
   { label: 'Register as a vendor', href: '/vendor-registration' },
   { label: 'Vendor sign in', href: '/sign-in' },
-  { label: 'Vendor enquiries', href: '/contact?enquiry=vendor#ams-contact-form' },
+  { label: 'Vendor enquiries', href: '/contact?enquiry=vendor#contact-form' },
 ];
 
 export function SiteFooter({ page = 'home' }: { page?: AmsPage }) {
-  const homeAnchor = (href: string) => page === 'home' || href === '#ams-top' || href === '#ams-build-with-us' ? href : '/' + href;
+  const homeAnchor = (href: string) => page === 'home' || href === '#top' || href === '#build-with-us' ? href : '/' + href;
   const pageCompanyLinks = companyLinks.map(link => ({ ...link, href: link.href?.startsWith('#') ? homeAnchor(link.href) : link.href }));
-  return <footer id="ams-footer" className="ams-site-footer ams-footer-wrap" aria-label="Site footer">
+  return <footer id="footer" className="ams-site-footer ams-footer-wrap" aria-label="Site footer">
     <FooterBrandBand />
     <div className="ams-site-footer-main">
       <div className="ams-site-footer-grid">
@@ -53,7 +53,7 @@ export function SiteFooter({ page = 'home' }: { page?: AmsPage }) {
       </div>
       <div className="ams-site-footer-bottom">
         <p>© {new Date().getFullYear()} AMS Irongate Contracting · Dubai, UAE</p>
-        <a className="ams-site-footer-top" href="#ams-top" aria-label="Back to top"><ArrowIcon /></a>
+        <a className="ams-site-footer-top" href="#top" aria-label="Back to top"><ArrowIcon /></a>
       </div>
     </div>
   </footer>;

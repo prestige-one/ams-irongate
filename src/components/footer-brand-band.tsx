@@ -1,5 +1,5 @@
 export function FooterBrandBand() {
-  return <div className="ams-footer-brand-band" id="ams-footer-brand" aria-hidden="true">
+  return <div className="ams-footer-brand-band" id="footer-brand" aria-hidden="true">
     <div className="ams-site-footer-wordmark"><span>AMS IRONGATE</span></div>
   </div>;
 }

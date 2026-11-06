@@ -22,7 +22,7 @@ export function VendorSignInSection({ recovery = false }: { recovery?: boolean }
           <figcaption><span className="ams-signin-avatar" aria-hidden="true">VP</span><span><strong>Vendor partner</strong><span>Illustrative feedback</span></span></figcaption>
         </figure>
       </aside>
-      <div className="ams-signin-login-panel"><VendorAuthForm recovery={recovery} /></div>
+      <div className="ams-signin-login-panel"><VendorAuthForm key={recovery ? 'recovery' : 'login'} recovery={recovery} /></div>
     </div>
   </section>;
 }

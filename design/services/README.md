@@ -8,7 +8,7 @@ Image sources: foundations.webp for General Contracting, actual-image.webp for D
 
 Shared ExpertiseSection follows the catalog, then CtaSection directly before SiteFooter. Section spacing is tightened on Services only. The original Expertise imagery and CSS expansion/swipe behavior are reused.
 
-Header Home, About and Services links use local routes on all three pages. Home Explore More links to /about; Explore our services and All services link to /services; Discover our approach links to /about#ams-values. Footer service links target actual catalog rows. Home process/FAQ and current-page CTA/top anchors resolve to existing sections. Enquiry, consultation and profile actions retain the shared contact dialogs.
+Header Home, About and Services links use local routes on all three pages. Home Explore More links to /about; Explore our services and All services link to /services; Discover our approach links to /about#values. Footer service links target actual catalog rows. Home process/FAQ and current-page CTA/top anchors resolve to existing sections. Enquiry, consultation and profile actions retain the shared contact dialogs.
 
 Mission/Vision styles: 18px headings with .1em tracking; 20px statements at weight 400 and line-height 1.4; requested black gradient background, including mobile.
 

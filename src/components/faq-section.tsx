@@ -21,7 +21,7 @@ const questions = [
 ];
 
 export function FaqSection() {
-  return <section className="ams-faq-section" id="ams-faq" aria-labelledby="ams-faq-title">
+  return <section className="ams-faq-section" id="faq" aria-labelledby="ams-faq-title">
     <div className="ams-faq-inner">
       <header className="ams-faq-heading" data-ams-reveal="up">
         <p className="ams-kicker">FAQ</p>

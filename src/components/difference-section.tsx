@@ -36,7 +36,7 @@ export function DifferenceSection() {
     };
   }, []);
 
-  return <section className="ams-difference" id="ams-difference" aria-labelledby="ams-difference-title">
+  return <section className="ams-difference" id="difference" aria-labelledby="ams-difference-title">
     <div className="ams-difference-inner">
       <header className="ams-difference-heading" data-ams-reveal="up">
         <p className="ams-kicker">THE AMS DIFFERENCE</p>
@@ -61,7 +61,7 @@ export function DifferenceSection() {
         </article>)}
       </div>
       <div className="ams-approach" data-ams-reveal="up">
-        <a className="ams-button ams-button-primary ams-pill-button ams-approach-button" href="/about#ams-values"><RollingLabel text="Discover our approach" /> <ArrowIcon /></a>
+        <a className="ams-button ams-button-primary ams-pill-button ams-approach-button" href="/about#values"><RollingLabel text="Discover our approach" /> <ArrowIcon /></a>
       </div>
     </div>
   </section>;
