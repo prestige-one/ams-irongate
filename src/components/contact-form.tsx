@@ -12,8 +12,11 @@ export function ContactForm() {
   const statusRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     setReady(true);
-    if (new URLSearchParams(window.location.search).get('enquiry') === 'profile') {
-      if (messageRef.current) messageRef.current.value = 'I would like to request the AMS Irongate company profile.';
+    const purpose = new URLSearchParams(window.location.search).get('enquiry');
+    if (purpose === 'profile' || purpose === 'vendor') {
+      if (messageRef.current) messageRef.current.value = purpose === 'profile'
+        ? 'I would like to request the AMS Irongate company profile.'
+        : 'I would like to speak with your team about becoming a vendor.';
       if (projectRef.current) projectRef.current.value = 'Other';
     }
   }, []);

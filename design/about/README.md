@@ -19,3 +19,5 @@ The shared homepage CtaSection is included after Our Values and directly before 
 ## Mission and Vision
 
 The story baseline tagline and decorative rule are removed on About only. Story padding remains equal at the top and bottom: 80px desktop, 64px tablet and 56px mobile. Mission and Vision follow the story in two restrained boxes, using the supplied statements verbatim. The section is charcoal and Values is black to preserve the alternating palette. Cards share PurposeCard markup, stack on mobile, and use the existing viewport reveal effect.
+
+Latest figures refinement: removed the horizontal rule beneath the story copy. The gap between the overview and figures equals the space below the figures: 80px desktop, 64px tablet and 56px mobile. Browser measurements confirmed both gaps match at all tested widths.

@@ -1,0 +1,25 @@
+// Install in the OLD backend as src/app/api/vendor/dashboard/route.ts.
+import { currentVendor } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+import { assessCompliance } from "@/lib/compliance";
+import { STATUS_META, vendorRef } from "@/lib/vendor-options";
+export const dynamic = "force-dynamic";
+export async function GET() {
+ const account = await currentVendor();
+ const headers = { "Cache-Control": "private, no-store" };
+ if (!account) return Response.json({ error: "Please sign in again." }, { status: 401, headers });
+ const { vendor } = account;
+ const [docs, events] = await Promise.all([
+  prisma.vendorDocument.findMany({ where: { vendorId: vendor.id }, select: { docType: true, expiryDate: true } }),
+  prisma.vendorEvent.findMany({ where: { vendorId: vendor.id, internal: false }, orderBy: { createdAt: "desc" }, take: 8,
+   select: { id: true, fromStatus: true, toStatus: true, message: true, createdAt: true } })
+ ]);
+ return Response.json({ ok: true, companyName: vendor.companyName, reference: vendorRef(vendor.ref),
+  status: STATUS_META[vendor.status].label, statusText: STATUS_META[vendor.status].vendorText,
+  note: vendor.status === "RETURNED" ? vendor.returnNote : vendor.status === "REJECTED" ? vendor.rejectReason : null,
+  compliance: assessCompliance(docs), events: events.map(event => ({
+   id: event.id, createdAt: event.createdAt,
+   message: event.fromStatus && event.toStatus ? "Moved to " + STATUS_META[event.toStatus].label.toLowerCase() : event.message
+  }))
+ }, { headers });
+}

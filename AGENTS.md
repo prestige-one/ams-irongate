@@ -41,7 +41,19 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Contact page
 - /contact uses the shared hero and the supplied contact-details/form layout. Keep the office/phone/hours placeholders as supplied. The form is explicitly demo-only: display a confirmation with a 24-hour response message; never send or store the entered data. Header enquiry actions and all consultation/profile CTAs use this page.
 
-- Our Landmarks and Vendors are plain text in the primary menu for now. Footer Our Landmarks and both vendor entries also have no hyperlinks. Keep their labels visible.
+- Our Landmarks remains plain text in the menu and footer. Vendors now links to /vendors; its registration action uses /vendor-registration and its sign-in action uses /sign-in.
 - TitleFrame desktop inset is -10px -30px; retain the compact mobile frame spacing to prevent overflow.
 
 - Brand spelling is AMS Irongate (IRONGATE as one word), including copyright, copy, headings, metadata and accessible labels. Footer Contact uses more separation above (24px desktop column gap) and an 8px gap below its title.
+
+## Vendors overview
+- /vendors contains the shared hero, four-step approval roadmap using ProcessStage, then the document preparation checklist. Use supplied copy verbatim, the existing black/charcoal theme, modest DM Sans headings and shared corner/pill styling.
+- The overview is complete. /vendor-registration now has the real five-step wizard connected to the legacy APIs. /sign-in remains the next separate page. Do not fake registration success; use mocked/local backends for automated tests instead of creating live applications.
+
+## Registration and About refinements
+- The registration wizard uses the recovered legacy field/API contract. Keep AMS_VENDOR_API_ORIGIN on a separately deployed legacy backend; a self-targeting origin is rejected. Contact remains demo-only, while registration performs real API writes when a visitor submits.
+- Required asterisks on registration are red; checkbox inputs and labels use pointer cursors. About story copy has no bottom rule. Figures have matching space above and below: 80px desktop, 64px tablet and 56px mobile.
+
+## Vendor sign in
+- /sign-in and /forgot-password use shared PageHero and a reusable black vendor auth card. Login preserves the old API contract, secure vendor cookie and /vendor redirect.
+- The dashboard summary needs the authenticated JSON bridge supplied in integrations/legacy-vendor-dashboard installed on the separately deployed legacy backend. Do not invent vendor status or expose staff/internal data.

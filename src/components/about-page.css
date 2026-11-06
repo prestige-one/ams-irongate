@@ -8,12 +8,13 @@
 .ams-about-page .ams-story-section{background:#000}
 .ams-about-overview-reversed>.ams-about-visual{grid-column:2;grid-row:1}
 .ams-about-overview-reversed>.ams-about-content{grid-column:1;grid-row:1}
-.ams-story-section .ams-about-content{padding-bottom:18px}
+.ams-story-section .ams-about-content{padding-bottom:18px;border-bottom:0}
 .ams-story-section .ams-about-copy p{max-width:570px}
+.ams-story-section .ams-about-figures{margin-top:80px}
 :is(.ams-about-page,.ams-services-page) .ams-primary-nav a[aria-current="page"]{background:#ffffff15;color:#fff}
 :is(.ams-about-page,.ams-services-page) .ams-primary-nav a[aria-current="page"]:hover{background:#fff;color:#000}
-@media(max-width:1100px){.ams-hero-centered.ams-page-hero{min-height:560px}.ams-hero-centered.ams-page-hero h1{font-size:40px}.ams-page-hero-content{padding-block:64px 76px}}
-@media(max-width:760px){.ams-hero-centered.ams-page-hero{min-height:600px}.ams-page-hero-content{padding:58px 0 68px}.ams-hero-centered.ams-page-hero h1{font-size:32px;line-height:1.2;margin-bottom:28px}.ams-page-hero-description{font-size:14px;line-height:1.8}.ams-page-hero-content>.ams-kicker{margin-bottom:26px}.ams-about-overview-reversed>.ams-about-content{grid-column:1;grid-row:1}.ams-about-overview-reversed>.ams-about-visual{grid-column:1;grid-row:2}.ams-story-section .ams-about-content{padding-bottom:0}.ams-story-section .ams-about-figures{margin-top:30px}}
+@media(max-width:1100px){.ams-story-section .ams-about-figures{margin-top:64px}.ams-hero-centered.ams-page-hero{min-height:560px}.ams-hero-centered.ams-page-hero h1{font-size:40px}.ams-page-hero-content{padding-block:64px 76px}}
+@media(max-width:760px){.ams-hero-centered.ams-page-hero{min-height:600px}.ams-page-hero-content{padding:58px 0 68px}.ams-hero-centered.ams-page-hero h1{font-size:32px;line-height:1.2;margin-bottom:28px}.ams-page-hero-description{font-size:14px;line-height:1.8}.ams-page-hero-content>.ams-kicker{margin-bottom:26px}.ams-about-overview-reversed>.ams-about-content{grid-column:1;grid-row:1}.ams-about-overview-reversed>.ams-about-visual{grid-column:1;grid-row:2}.ams-story-section .ams-about-content{padding-bottom:0}.ams-story-section .ams-about-figures{margin-top:56px}}
 @media(max-width:380px){.ams-hero-centered.ams-page-hero h1{font-size:29px}.ams-page-hero-description{font-size:13px}}
 
 .ams-values-section .ams-services-overview-heading>.ams-kicker{justify-content:center;margin:0 0 26px}

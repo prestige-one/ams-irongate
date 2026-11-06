@@ -1,3 +1,6 @@
+@import '../components/vendor-auth.css';
+@import '../components/registration/registration.css';
+@import '../components/vendors-page.css';
 @import '../components/contact-page.css';
 @import '../components/kicker-pill.css';
 @import '../components/services-page.css';

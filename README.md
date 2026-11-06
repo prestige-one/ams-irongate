@@ -24,11 +24,11 @@ The production build includes TypeScript validation. Automated checks cover hero
 
 ## Website features
 
-- Compact 900px desktop header with centered navigation and an enquiry dialog.
+- Compact 1080px desktop header with centered navigation and a link to Contact Us.
 - Immediately visible responsive hero image with subtle WebGL lighting animation. Building geometry stays fixed; there is no mouse parallax.
 - About section with a rounded architectural image and animated company figures.
 - Four illustrative service cards with sequential orange border drawing, a moving glint, and subtle image zoom on hover.
-- Centered services button opens an accessible overview dialog.
+- Services links open the full image-based Services page.
 - Responsive layouts and reduced-motion support.
 
 ## Performance
@@ -46,6 +46,12 @@ The hero uses one texture, one draw call and two triangles. Its renderer caps de
 
 ## Preview status
 
-Contact information is explicitly labelled as sample data. There is no form submission backend. Search indexing is disabled in `src/app/layout.tsx`. Configure real business contact details and review indexing before a public launch.
+Contact details remain supplied placeholders. The Contact form is demo-only and displays a local 24-hour confirmation. Vendor registration uses the legacy backend through fixed server API routes. Search indexing is disabled in `src/app/layout.tsx`. Configure real business contact details and review indexing before a public launch.
 
 Service imagery illustrates capabilities; it is not presented as a completed-project portfolio.
+
+## Vendor registration backend
+
+The five-step form lives at /vendor-registration. It reuses the existing registration and authenticated document-upload APIs from the legacy application. Keep that application (database, private files and sessions) deployed separately. Configure AMS_VENDOR_API_ORIGIN using .env.example when deploying; it must not point back to this public website. The verified default is https://ams-irongate.vercel.app. No database or signing secrets are needed by this frontend.
+
+Submission creates a real vendor account and uploads documents. Automated browser tests use intercepted responses or an isolated local backend; no live applications were created. Build and 19 automated tests pass. Integration details and verification are in design/vendor-registration/README.md. The /sign-in and /forgot-password pages now use the legacy authentication endpoints. Successful sign-in redirects to /vendor. See integrations/legacy-vendor-dashboard/README.md for the small backend addition required to serve real dashboard data.

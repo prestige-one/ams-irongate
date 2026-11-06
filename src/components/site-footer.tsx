@@ -1,3 +1,4 @@
+import type { AmsPage } from '@/lib/site-pages';
 import { amsContact } from '@/lib/contact-details';
 import { FooterBrandBand } from './footer-brand-band';
 import { Brand } from './brand';
@@ -23,11 +24,12 @@ const companyLinks: readonly FooterLink[] = [
 ];
 
 const vendorLinks = [
-  { label: 'Register as a vendor' },
-  { label: 'Vendor enquiries' },
+  { label: 'Register as a vendor', href: '/vendor-registration' },
+  { label: 'Vendor sign in', href: '/sign-in' },
+  { label: 'Vendor enquiries', href: '/contact?enquiry=vendor#ams-contact-form' },
 ];
 
-export function SiteFooter({ page = 'home' }: { page?: 'home' | 'about' | 'services' | 'contact' }) {
+export function SiteFooter({ page = 'home' }: { page?: AmsPage }) {
   const homeAnchor = (href: string) => page === 'home' || href === '#ams-top' || href === '#ams-build-with-us' ? href : '/' + href;
   const pageCompanyLinks = companyLinks.map(link => ({ ...link, href: link.href?.startsWith('#') ? homeAnchor(link.href) : link.href }));
   return <footer id="ams-footer" className="ams-site-footer ams-footer-wrap" aria-label="Site footer">
