@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',Arial,sans-serif}
 .ams-hero-centered .ams-header:after{display:none}
 .ams-hero-centered .ams-logo-link{justify-self:start}
 .ams-primary-nav{display:flex;justify-content:center;align-items:center;gap:4px;min-width:0;padding:4px 10px;border:1px solid #d2d2d233;border-radius:999px;background:linear-gradient(180deg,#c9c9c91f,#b1b1b10b);box-shadow:0 0 70px #7a7a7a16,inset 0 1px 0 #ffffff0d;backdrop-filter:blur(14px)}
-.ams-primary-nav a,.ams-primary-nav button{display:block;padding:8px 18px;font-size:13px;line-height:20px;color:#e0e0e0;transition:color .2s,background .2s;border-radius:999px;white-space:nowrap}
+.ams-primary-nav a,.ams-primary-nav button,.ams-primary-nav .ams-nav-label{display:block;padding:8px 18px;font-size:13px;line-height:20px;color:#e0e0e0;transition:color .2s,background .2s;border-radius:999px;white-space:nowrap}
 .ams-primary-nav a:hover,.ams-primary-nav button:hover{color:#fff;background:#ffffff0b}
 .ams-enquire-button{justify-self:end;display:inline-flex;align-items:center;gap:18px;min-height:46px;padding:12px 23px;background:#fff;border:1px solid #fff;border-radius:28px;color:#111;font-size:12px;font-weight:600;white-space:nowrap;transition:box-shadow .2s,background .2s}
 .ams-enquire-button:hover{background:#f5f5f5;box-shadow:0 0 24px #cecece30}
@@ -103,9 +103,9 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',Arial,sans-serif}
 .ams-hero-centered .ams-hero-shade{background:radial-gradient(ellipse 52% 30% at 50% 50%,#0f0f0fb3,transparent 100%),radial-gradient(ellipse at 50% 0%,#3e3e3e4d,transparent 47%),linear-gradient(180deg,#0f0f0f 0%,#0f0f0ff7 20%,#0f0f0fcf 32%,#0f0f0f66 46%,#0f0f0f0d 60%,#0f0f0f33 75%,#0f0f0f 100%),linear-gradient(90deg,#0f0f0f80,transparent 25%,transparent 75%,#0f0f0f80)}
 .ams-hero-centered .ams-hero-bottom{border-top-color:#ffffff18}
 @media(max-height:800px) and (min-width:761px){.ams-hero-centered .ams-header{height:94px}.ams-hero-centered .ams-hero-content{top:50%}.ams-hero-centered h1{font-size:54px;margin-top:21px;margin-bottom:17px}.ams-hero-centered .ams-hero-actions{margin-top:22px}}
-@media(max-width:1000px){.ams-primary-nav{min-width:0;padding:4px 8px}.ams-primary-nav a,.ams-primary-nav button{padding:8px 13px}.ams-hero-centered h1{font-size:50px}.ams-hero-centered .ams-hero-content{width:88%}}
-@media(max-width:760px){.ams-hero-centered{min-height:620px}.ams-hero-centered .ams-header{height:126px;grid-template-columns:1fr 1fr;gap:10px 16px;padding:18px 6% 0;align-content:start}.ams-hero-centered .ams-logo-link{grid-column:1;grid-row:1;align-self:center}.ams-enquire-button{grid-column:2;grid-row:1;min-height:40px;padding:10px 16px;font-size:11px;gap:12px}.ams-primary-nav{grid-column:1/-1;grid-row:2;justify-self:center;min-width:0;max-width:100%;padding:3px 7px;border-radius:999px;gap:2px}.ams-primary-nav a,.ams-primary-nav button{font-size:12px;line-height:20px;padding:7px 14px}.ams-hero-centered .ams-hero-content{top:50%;width:88%}.ams-hero-centered .ams-kicker{font-size:10px;letter-spacing:.12em;padding:10px 13px}.ams-hero-centered h1{font-size:40px;line-height:1.14;margin:22px auto 18px;max-width:500px}.ams-hero-centered .ams-hero-description{font-size:12px;line-height:1.8;max-width:315px}.ams-hero-centered .ams-hero-actions{margin-top:23px}.ams-hero-centered .ams-button-primary{padding:13px 21px;font-size:11px;min-height:46px}.ams-hero-centered .ams-hero-art{left:0;top:0;width:100%;height:100%}.ams-hero-centered .ams-hero-shade{background:radial-gradient(ellipse 75% 29% at 50% 50%,#0f0f0fcc,transparent 100%),radial-gradient(ellipse at 50% 0%,#3e3e3e55,transparent 50%),linear-gradient(180deg,#0f0f0f 0%,#0f0f0ff2 30%,#0f0f0fcc 43%,#0f0f0f66 54%,#0f0f0f0a 68%,#0f0f0f40 79%,#0f0f0f 100%)}.ams-hero-centered .ams-hero-bottom{bottom:25px}.ams-hero-centered .ams-motion-toggle{bottom:95px}}
-@media(max-width:380px){.ams-hero-centered h1{font-size:36px}.ams-hero-centered .ams-hero-content{top:50%}.ams-enquire-button{font-size:10px;padding:9px 13px}.ams-primary-nav{min-width:0}.ams-primary-nav a,.ams-primary-nav button{padding-inline:11px}}
+@media(max-width:1000px){.ams-primary-nav{min-width:0;padding:4px 8px}.ams-primary-nav a,.ams-primary-nav button,.ams-primary-nav .ams-nav-label{padding:8px 13px}.ams-hero-centered h1{font-size:50px}.ams-hero-centered .ams-hero-content{width:88%}}
+@media(max-width:760px){.ams-hero-centered{min-height:620px}.ams-hero-centered .ams-header{height:126px;grid-template-columns:1fr 1fr;gap:10px 16px;padding:18px 6% 0;align-content:start}.ams-hero-centered .ams-logo-link{grid-column:1;grid-row:1;align-self:center}.ams-enquire-button{grid-column:2;grid-row:1;min-height:40px;padding:10px 16px;font-size:11px;gap:12px}.ams-primary-nav{grid-column:1/-1;grid-row:2;justify-self:center;min-width:0;max-width:100%;padding:3px 7px;border-radius:999px;gap:2px}.ams-primary-nav a,.ams-primary-nav button,.ams-primary-nav .ams-nav-label{font-size:12px;line-height:20px;padding:7px 14px}.ams-hero-centered .ams-hero-content{top:50%;width:88%}.ams-hero-centered .ams-kicker{font-size:10px;letter-spacing:.12em;padding:10px 13px}.ams-hero-centered h1{font-size:40px;line-height:1.14;margin:22px auto 18px;max-width:500px}.ams-hero-centered .ams-hero-description{font-size:12px;line-height:1.8;max-width:315px}.ams-hero-centered .ams-hero-actions{margin-top:23px}.ams-hero-centered .ams-button-primary{padding:13px 21px;font-size:11px;min-height:46px}.ams-hero-centered .ams-hero-art{left:0;top:0;width:100%;height:100%}.ams-hero-centered .ams-hero-shade{background:radial-gradient(ellipse 75% 29% at 50% 50%,#0f0f0fcc,transparent 100%),radial-gradient(ellipse at 50% 0%,#3e3e3e55,transparent 50%),linear-gradient(180deg,#0f0f0f 0%,#0f0f0ff2 30%,#0f0f0fcc 43%,#0f0f0f66 54%,#0f0f0f0a 68%,#0f0f0f40 79%,#0f0f0f 100%)}.ams-hero-centered .ams-hero-bottom{bottom:25px}.ams-hero-centered .ams-motion-toggle{bottom:95px}}
+@media(max-width:380px){.ams-hero-centered h1{font-size:36px}.ams-hero-centered .ams-hero-content{top:50%}.ams-enquire-button{font-size:10px;padding:9px 13px}.ams-primary-nav{min-width:0}.ams-primary-nav a,.ams-primary-nav button,.ams-primary-nav .ams-nav-label{padding-inline:11px}}
 
 
 /* Shaded white enquiry buttons with a tactile pressed state. */
@@ -161,7 +161,7 @@ html{scrollbar-color:#606060 #050505}::selection{background:#ddd;color:#111}
 .ams-hero-centered .ams-hero-art{left:0;top:auto;bottom:0;width:100%;height:auto;aspect-ratio:1882/836}
 .ams-hero-centered .ams-hero-shade{background:radial-gradient(ellipse 43% 28% at 50% 49%,#0006,transparent 100%),linear-gradient(180deg,#05050566 0%,transparent 22%,transparent 85%,#050505 100%)}
 .ams-primary-nav{border-color:#ffffff40;background:linear-gradient(180deg,#242424cc,#111111b3);box-shadow:inset 0 1px 0 #ffffff0d}
-.ams-primary-nav a,.ams-primary-nav button{color:#eee}
+.ams-primary-nav a,.ams-primary-nav button,.ams-primary-nav .ams-nav-label{color:#eee}
 .ams-hero-centered .ams-kicker{border-color:#ffffff60;background:#101010d9;color:#f5f5f5}
 .ams-live-dot{background:#fff;box-shadow:0 0 8px #ffffff66}
 .ams-hero-centered h1,.ams-hero-centered h1 em{color:#f5f5f3}
@@ -339,7 +339,7 @@ html{scrollbar-color:#606060 #050505}::selection{background:#ddd;color:#111}
 /* Global type treatment requested for headings and action labels. */
 :is(.ams-main,.ams-overlay) :is(h1,h2,h3,h4,h5,h6){font-weight:800;text-transform:uppercase}
 .ams-main :is(h1,h2,h3,h4,h5,h6) em{font-weight:inherit}
-button,.ams-button,.ams-approach summary,.ams-primary-nav a{text-transform:uppercase}
+button,.ams-button,.ams-approach summary,.ams-primary-nav a,.ams-primary-nav .ams-nav-label{text-transform:uppercase}
 
 /* Deliberate, staggered entrance motion. The building itself remains immediately visible. */
 @keyframes ams-hero-enter{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
@@ -359,20 +359,20 @@ button,.ams-button,.ams-approach summary,.ams-primary-nav a{text-transform:upper
 @media(min-width:761px) and (max-width:1100px){
  .ams-hero-centered .ams-header{gap:14px;grid-template-columns:auto minmax(0,1fr) auto}
  .ams-primary-nav{justify-self:center;padding:4px 6px;gap:0}
- .ams-primary-nav a{font-size:11px;padding-inline:10px}
+ .ams-primary-nav a,.ams-primary-nav .ams-nav-label{font-size:11px;padding-inline:10px}
 }
 @media(min-width:761px) and (max-width:900px){
  .ams-hero-centered .ams-header{gap:12px}
  .ams-hero-centered .ams-logo-link img{width:100px}
- .ams-primary-nav a{font-size:10px;padding-inline:8px}
+ .ams-primary-nav a,.ams-primary-nav .ams-nav-label{font-size:10px;padding-inline:8px}
  .ams-hero-centered .ams-enquire-button{padding-inline:14px;gap:10px;font-size:11px}
 }
 @media(max-width:760px){
  .ams-primary-nav{width:100%;justify-content:space-between;padding:3px 5px;gap:0}
- .ams-primary-nav a{font-size:10px;padding:7px 7px}
+ .ams-primary-nav a,.ams-primary-nav .ams-nav-label{font-size:10px;padding:7px 7px}
 }
 @media(max-width:360px){
- .ams-primary-nav a{font-size:9px;padding-inline:5px}
+ .ams-primary-nav a,.ams-primary-nav .ams-nav-label{font-size:9px;padding-inline:5px}
 }
 
 @media(min-width:1101px){.ams-commitment-1,.ams-commitment-3{justify-self:end}.ams-commitment-2,.ams-commitment-4{justify-self:start}}

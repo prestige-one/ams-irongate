@@ -43,3 +43,5 @@
 /* Align contact details to the same row rhythm as the neighboring links. */
 .ams-site-footer-contact-column>div>.ams-kicker{margin-bottom:16px}
 .ams-site-footer-contact-column address{line-height:calc(1.8em + 9px)}
+
+.ams-site-footer-label{font-size:13px;line-height:1.8;color:#a8a8a2;text-wrap:pretty}

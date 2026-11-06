@@ -4,32 +4,32 @@ import { Brand } from './brand';
 import { ArrowIcon } from './arrow-icon';
 import { amsServices } from '@/lib/services';
 
-type FooterLink = { label: string; href: string };
+type FooterLink = { label: string; href?: string };
 
 function FooterLinkGroup({ title, links }: { title: string; links: readonly FooterLink[] }) {
   return <nav className="ams-site-footer-group" aria-label={title}>
     <h3 className="ams-kicker">{title}</h3>
-    <ul>{links.map(link => <li key={link.label}><a href={link.href}>{link.label}</a></li>)}</ul>
+    <ul>{links.map(link => <li key={link.label}>{link.href ? <a href={link.href}>{link.label}</a> : <span className="ams-site-footer-label">{link.label}</span>}</li>)}</ul>
   </nav>;
 }
 
-const companyLinks = [
+const companyLinks: readonly FooterLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
-  { label: 'Our Landmarks', href: 'https://ams-irongate.vercel.app/landmarks' },
+  { label: 'Our Landmarks' },
   { label: 'How We Work', href: '#ams-process' },
   { label: 'FAQ', href: '#ams-faq' },
   { label: 'Contact Us', href: '/contact' },
 ];
 
 const vendorLinks = [
-  { label: 'Register as a vendor', href: 'https://ams-irongate.vercel.app/vendors' },
-  { label: 'Vendor enquiries', href: 'mailto:' + amsContact.email + '?subject=AMS%20Vendor%20Enquiry' },
+  { label: 'Register as a vendor' },
+  { label: 'Vendor enquiries' },
 ];
 
 export function SiteFooter({ page = 'home' }: { page?: 'home' | 'about' | 'services' | 'contact' }) {
   const homeAnchor = (href: string) => page === 'home' || href === '#ams-top' || href === '#ams-build-with-us' ? href : '/' + href;
-  const pageCompanyLinks = companyLinks.map(link => ({ ...link, href: link.href.startsWith('#') ? homeAnchor(link.href) : link.href }));
+  const pageCompanyLinks = companyLinks.map(link => ({ ...link, href: link.href?.startsWith('#') ? homeAnchor(link.href) : link.href }));
   return <footer id="ams-footer" className="ams-site-footer ams-footer-wrap" aria-label="Site footer">
     <FooterBrandBand />
     <div className="ams-site-footer-main">

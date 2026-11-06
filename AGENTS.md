@@ -40,3 +40,6 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Contact page
 - /contact uses the shared hero and the supplied contact-details/form layout. Keep the office/phone/hours placeholders as supplied. The form is explicitly demo-only: display a confirmation with a 24-hour response message; never send or store the entered data. Header enquiry actions and all consultation/profile CTAs use this page.
+
+- Our Landmarks and Vendors are plain text in the primary menu for now. Footer Our Landmarks and both vendor entries also have no hyperlinks. Keep their labels visible.
+- TitleFrame desktop inset is -10px -30px; retain the compact mobile frame spacing to prevent overflow.
