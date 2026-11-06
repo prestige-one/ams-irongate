@@ -13,7 +13,7 @@ const navigation: readonly { label: string; href?: string; page?: SitePage }[] =
 
 export function SiteHeader({ page = 'home' }: { page?: SitePage }) {
   return <header className="ams-header">
-    <a className="ams-logo-link" href="/" aria-label="AMS Iron Gate Contracting — Home"><Brand /></a>
+    <a className="ams-logo-link" href="/" aria-label="AMS Irongate Contracting — Home"><Brand /></a>
     <nav className="ams-primary-nav" aria-label="Main navigation">
       {navigation.map(item => item.href
         ? <a key={item.label} href={item.href} aria-current={item.page === page ? 'page' : undefined}>{item.label}</a>

@@ -5,8 +5,8 @@ import { ContactSection } from '@/components/contact-section';
 import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
-  title: 'Contact Us — AMS Iron Gate Contracting',
-  description: 'Bring your vision to life. Contact AMS Iron Gate Contracting in Dubai to discuss your next development.',
+  title: 'Contact Us — AMS Irongate Contracting',
+  description: 'Bring your vision to life. Contact AMS Irongate Contracting in Dubai to discuss your next development.',
 };
 
 export default function ContactPage() {

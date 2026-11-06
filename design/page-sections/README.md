@@ -18,7 +18,7 @@ The CTA uses a white shared primary button and a transparent white-outline secon
 
 ## Footer
 
-The black footer uses the original AMS logo, company/services/vendors/contact columns, and a large static silver-gradient AMS IRON GATE background watermark inside its markup. FooterBrandBand is absolutely positioned behind the content at 12% opacity, 96px below the footer top (80px on mobile). There is no wordmark animation, separate image or duplicate text.
+The black footer uses the original AMS logo, company/services/vendors/contact columns, and a large static silver-gradient AMS IRONGATE background watermark inside its markup. FooterBrandBand is absolutely positioned behind the content at 12% opacity, 96px below the footer top (80px on mobile). There is no wordmark animation, separate image or duplicate text.
 
 The prominent white back-to-top circle remains fixed at the bottom-right: 52px desktop / 48px mobile. It uses the requested thick rounded chevron, rotated upward. All shared button arrows use the same new chevron. Footer service links target real service rows from shared src/lib/services.ts data.
 

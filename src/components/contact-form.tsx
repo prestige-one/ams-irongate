@@ -13,7 +13,7 @@ export function ContactForm() {
   useEffect(() => {
     setReady(true);
     if (new URLSearchParams(window.location.search).get('enquiry') === 'profile') {
-      if (messageRef.current) messageRef.current.value = 'I would like to request the AMS Iron Gate company profile.';
+      if (messageRef.current) messageRef.current.value = 'I would like to request the AMS Irongate company profile.';
       if (projectRef.current) projectRef.current.value = 'Other';
     }
   }, []);

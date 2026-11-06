@@ -35,7 +35,7 @@ export function SiteFooter({ page = 'home' }: { page?: 'home' | 'about' | 'servi
     <div className="ams-site-footer-main">
       <div className="ams-site-footer-grid">
         <div className="ams-site-footer-brand">
-          <a href="#ams-top" aria-label="AMS Iron Gate Contracting — back to top"><Brand /></a>
+          <a href="#ams-top" aria-label="AMS Irongate Contracting — back to top"><Brand /></a>
           <p className="ams-site-footer-tagline">Built with precision.<br />Delivered with integrity.</p>
           <p className="ams-site-footer-description">A Dubai contracting company delivering residential and commercial landmarks.</p>
         </div>
@@ -50,7 +50,7 @@ export function SiteFooter({ page = 'home' }: { page?: 'home' | 'about' | 'servi
         </div>
       </div>
       <div className="ams-site-footer-bottom">
-        <p>© {new Date().getFullYear()} AMS Iron Gate Contracting · Dubai, UAE</p>
+        <p>© {new Date().getFullYear()} AMS Irongate Contracting · Dubai, UAE</p>
         <a className="ams-site-footer-top" href="#ams-top" aria-label="Back to top"><ArrowIcon /></a>
       </div>
     </div>

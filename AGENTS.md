@@ -25,7 +25,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - All h1–h6 headings are uppercase. Body text keeps normal casing.
 - Kicker labels: #f6a137 and 12px. About figures: weight 700. Shared button arrows are thick rounded chevrons.
 - Alternate solid #000 and #0d0f10 section backgrounds from About onward. Use shared responsive section-rhythm.css padding.
-- Footer: black, with a static large silver-gradient AMS IRON GATE background watermark inside the footer. Position it lower (96px from the footer top on desktop, 80px on mobile) at 12% opacity. Keep the prominent white back-to-top button fixed at the viewport bottom-right.
+- Footer: black, with a static large silver-gradient AMS IRONGATE background watermark inside the footer. Position it lower (96px from the footer top on desktop, 80px on mobile) at 12% opacity. Keep the prominent white back-to-top button fixed at the viewport bottom-right.
 
 - The CTA contains its background photo and action content only. FooterBrandBand belongs inside SiteFooter, behind the content, and has no separate image or animation.
 
@@ -43,3 +43,5 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - Our Landmarks and Vendors are plain text in the primary menu for now. Footer Our Landmarks and both vendor entries also have no hyperlinks. Keep their labels visible.
 - TitleFrame desktop inset is -10px -30px; retain the compact mobile frame spacing to prevent overflow.
+
+- Brand spelling is AMS Irongate (IRONGATE as one word), including copyright, copy, headings, metadata and accessible labels. Footer Contact uses more separation above (24px desktop column gap) and an 8px gap below its title.

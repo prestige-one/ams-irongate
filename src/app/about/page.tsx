@@ -8,8 +8,8 @@ import { EntranceMotion } from '@/components/entrance-motion';
 import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
-  title: 'About Us — AMS Iron Gate Contracting',
-  description: 'Strength in structure. Integrity in everything. Discover the story behind AMS Iron Gate Contracting, a Dubai-based contracting company.',
+  title: 'About Us — AMS Irongate Contracting',
+  description: 'Strength in structure. Integrity in everything. Discover the story behind AMS Irongate Contracting, a Dubai-based contracting company.',
 };
 
 export default function AboutPage() {

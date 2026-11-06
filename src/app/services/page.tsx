@@ -7,7 +7,7 @@ import { CtaSection } from '@/components/cta-section';
 import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
-  title: 'Services — AMS Iron Gate Contracting',
+  title: 'Services — AMS Irongate Contracting',
   description: 'From concept to completion. Specialist construction capabilities and seamless coordination for residential and commercial developments in Dubai.',
 };
 

@@ -1,4 +1,4 @@
-# AMS Iron Gate Contracting
+# AMS Irongate Contracting
 
 A responsive Next.js construction website with a black and silver architectural design, self-hosted DM Sans variable fonts, and the supplied AMS logo.
 
