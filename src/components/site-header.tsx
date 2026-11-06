@@ -1,6 +1,7 @@
 import type { AmsPage } from '@/lib/site-pages';
 import { Brand } from './brand';
 import { ArrowIcon } from './arrow-icon';
+import { RollingLabel } from './rolling-label';
 
 const navigation: readonly { label: string; href?: string; page?: AmsPage }[] = [
   { label: 'Home', href: '/', page: 'home' },
@@ -18,6 +19,6 @@ export function SiteHeader({ page = 'home' }: { page?: AmsPage }) {
         ? <a key={item.label} href={item.href} aria-current={item.page === page || (item.page === 'vendors' && ['vendor-registration', 'sign-in', 'forgot-password'].includes(page)) ? 'page' : undefined}>{item.label}</a>
         : <span className="ams-nav-label" key={item.label}>{item.label}</span>)}
     </nav>
-    <a className="ams-enquire-button" href={page === 'contact' ? '#ams-contact-form' : '/contact#ams-contact-form'}>Enquire Us <ArrowIcon /></a>
+    <a className="ams-enquire-button" href={page === 'contact' ? '#ams-contact-form' : '/contact#ams-contact-form'}><RollingLabel text="Enquire Us" /> <ArrowIcon /></a>
   </header>;
 }

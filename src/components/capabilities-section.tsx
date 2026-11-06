@@ -1,5 +1,7 @@
 'use client';
+import { RollingLabel } from './rolling-label';
 import { TitleFrame } from './title-frame';
+import { ArrowIcon } from './arrow-icon';
 
 
 import { useEffect, useRef } from 'react';
@@ -41,7 +43,7 @@ export function CapabilitiesSection() {
         {capabilities.map((capability, index) => <CapabilityCard key={capability.number} {...capability} index={index} />)}
       </div>
       <div className="ams-capabilities-baseline" data-ams-reveal="up">
-        <a className="ams-button ams-button-primary ams-pill-button ams-services-button" href="/services">Explore our services</a>
+        <a className="ams-button ams-button-primary ams-pill-button ams-services-button" href="/services"><RollingLabel text="Explore our services" /> <ArrowIcon /></a>
       </div>
     </div>
   </section>;

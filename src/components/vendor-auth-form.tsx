@@ -1,4 +1,5 @@
 'use client';
+import { RollingLabel } from './rolling-label';
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
@@ -62,7 +63,7 @@ export function VendorAuthForm({ recovery: initialRecovery = false }: { recovery
               <button type="button" className="ams-auth-reveal" onClick={() => setVisible(value => !value)} aria-label={visible ? 'Hide password' : 'Show password'} aria-pressed={visible}>{visible ? 'Hide' : 'Show'}</button>
             </div></>}
           {error && <div id="ams-auth-error" ref={notice} tabIndex={-1} role="alert" className="ams-auth-notice ams-auth-error">{error}</div>}
-          <button className="ams-pill-button ams-button" type="submit">{busy ? (recovery ? 'Sending…' : 'Signing in…') : (recovery ? 'Send reset link' : 'Sign in')}<ArrowIcon /></button>
+          <button className="ams-pill-button ams-button" type="submit"><RollingLabel text={busy ? (recovery ? 'Sending…' : 'Signing in…') : (recovery ? 'Send reset link' : 'Sign in')} /><ArrowIcon /></button>
         </fieldset>
         <noscript><p>Please enable JavaScript to securely use this form.</p></noscript>
       </form>}

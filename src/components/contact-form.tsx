@@ -1,4 +1,5 @@
 'use client';
+import { RollingLabel } from './rolling-label';
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { ArrowIcon } from './arrow-icon';
@@ -47,7 +48,7 @@ export function ContactForm() {
         <div className="ams-contact-field ams-contact-field-wide"><label htmlFor="ams-contact-project-type">Project type *</label><select ref={projectRef} id="ams-contact-project-type" name="projectType" defaultValue="Residential" required><option>Residential</option><option>Commercial</option><option>Mixed-use</option><option>Other</option></select></div>
         <div className="ams-contact-field ams-contact-field-wide"><label htmlFor="ams-contact-message">Tell us about your project *</label><textarea ref={messageRef} id="ams-contact-message" name="message" rows={5} required maxLength={4000} /></div>
       </div>
-      <button className="ams-button ams-button-primary ams-pill-button ams-contact-submit" type="submit" disabled={submitted}>{submitted ? 'Enquiry submitted' : 'Send enquiry'}<ArrowIcon /></button>
+      <button className="ams-button ams-button-primary ams-pill-button ams-contact-submit" type="submit" disabled={submitted}><RollingLabel text={submitted ? 'Enquiry submitted' : 'Send enquiry'} /><ArrowIcon /></button>
       {submitted && <div className="ams-contact-success" role="status" tabIndex={-1} ref={statusRef}><strong>Thank you for your enquiry.</strong><p>Your enquiry has been submitted. One of our agents will contact you within 24 hours.</p></div>}
       </fieldset>
       <noscript><p className="ams-contact-form-intro">Enable JavaScript to use this enquiry preview.</p></noscript>

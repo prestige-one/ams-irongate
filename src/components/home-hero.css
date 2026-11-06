@@ -1,0 +1,4 @@
+/* Center the home copy in the visible area below the header, with equal outer space. */
+.ams-hero.ams-hero-centered{display:grid;grid-template-rows:auto 1fr;height:auto;min-height:100svh;max-height:none}
+.ams-hero.ams-hero-centered>.ams-hero-content{position:relative;left:auto;top:auto;transform:none;align-self:center;justify-self:center;margin:0;padding:36px 0}
+@media(max-width:760px){.ams-hero.ams-hero-centered>.ams-hero-content{padding-block:32px}}

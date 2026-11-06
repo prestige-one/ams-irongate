@@ -1,3 +1,4 @@
+import { RollingLabel } from '@/components/rolling-label';
 import type { Metadata } from 'next';
 import { PageHero } from '@/components/page-hero';
 import { EntranceMotion } from '@/components/entrance-motion';
@@ -17,7 +18,7 @@ export default function VendorsPage() {
     <PageHero page="vendors" titleId="ams-vendors-hero-title" kicker="VENDORS"
       title={<>Build with<br /><em>AMS Irongate</em></>}
       description="We work with subcontractors, suppliers, manufacturers, consultants and service providers who share our standards. Register once and keep your company file current in one place."
-      actions={<><a className="ams-button ams-button-primary ams-pill-button" href="/vendor-registration">Register as a vendor <ArrowIcon /></a><a className="ams-button ams-button-outline" href="/sign-in">Vendor sign in <ArrowIcon /></a></>} />
+      actions={<><a className="ams-button ams-button-primary ams-pill-button" href="/vendor-registration"><RollingLabel text="Register as a vendor" /> <ArrowIcon /></a><a className="ams-button ams-button-outline" href="/sign-in"><RollingLabel text="Vendor sign in" /> <ArrowIcon /></a></>} />
     <VendorProcessSection />
     <VendorPreparation />
     <SiteFooter page="vendors" />

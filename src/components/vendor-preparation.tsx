@@ -1,3 +1,4 @@
+import { RollingLabel } from './rolling-label';
 import { TitleFrame } from './title-frame';
 import { ArrowIcon } from './arrow-icon';
 import { VendorDocument } from './vendor-document';
@@ -19,7 +20,7 @@ export function VendorPreparation() {
         <h2 id="ams-vendor-preparation-title"><TitleFrame>What you<br />will need</TitleFrame></h2>
         <p className="ams-vendor-prep-description">PDF, JPG or PNG files. You can add the rest from your portal after registering.</p>
         <ul className="ams-vendor-formats" aria-label="Accepted document formats"><li>PDF</li><li>JPG</li><li>PNG</li></ul>
-        <a className="ams-button ams-button-primary ams-pill-button" href="/vendor-registration">Register as a vendor <ArrowIcon /></a>
+        <a className="ams-button ams-button-primary ams-pill-button" href="/vendor-registration"><RollingLabel text="Register as a vendor" /> <ArrowIcon /></a>
       </div>
       <div className="ams-vendor-documents" data-ams-reveal="up" data-ams-delay="120">
         <div className="ams-vendor-documents-heading"><p>Document checklist</p><span>4 required · 2 optional</span></div>

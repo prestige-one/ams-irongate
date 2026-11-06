@@ -1,3 +1,4 @@
+import { RollingLabel } from './rolling-label';
 import { OverviewGrid } from './overview-grid';
 import { TitleFrame } from './title-frame';
 import { amsServices } from '@/lib/services';
@@ -12,7 +13,7 @@ export function ServicesOverview({ showAction = true }: { showAction?: boolean }
         <h2 id="ams-services-overview-title"><TitleFrame>One partner.<br />Every stage.</TitleFrame></h2>
       </header>
       <OverviewGrid items={amsServices} id="ams-service-list" label="Our six services" />
-      {showAction && <div className="ams-services-overview-actions" data-ams-reveal="up"><a className="ams-button ams-button-primary ams-pill-button" href="/services">All services <ArrowIcon /></a></div>}
+      {showAction && <div className="ams-services-overview-actions" data-ams-reveal="up"><a className="ams-button ams-button-primary ams-pill-button" href="/services"><RollingLabel text="All services" /> <ArrowIcon /></a></div>}
     </div>
   </section>;
 }

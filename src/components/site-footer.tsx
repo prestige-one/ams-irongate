@@ -7,9 +7,9 @@ import { amsServices } from '@/lib/services';
 
 type FooterLink = { label: string; href?: string };
 
-function FooterLinkGroup({ title, links }: { title: string; links: readonly FooterLink[] }) {
+function FooterLinkGroup({ title, titleHref, links }: { title: string; titleHref?: string; links: readonly FooterLink[] }) {
   return <nav className="ams-site-footer-group" aria-label={title}>
-    <h3 className="ams-kicker">{title}</h3>
+    <h3 className="ams-kicker">{titleHref ? <a href={titleHref}>{title}</a> : title}</h3>
     <ul>{links.map(link => <li key={link.label}>{link.href ? <a href={link.href}>{link.label}</a> : <span className="ams-site-footer-label">{link.label}</span>}</li>)}</ul>
   </nav>;
 }
@@ -37,14 +37,14 @@ export function SiteFooter({ page = 'home' }: { page?: AmsPage }) {
     <div className="ams-site-footer-main">
       <div className="ams-site-footer-grid">
         <div className="ams-site-footer-brand">
-          <a href="#ams-top" aria-label="AMS Irongate Contracting — back to top"><Brand /></a>
+          <a href="/" aria-label="AMS Irongate Contracting — Home"><Brand /></a>
           <p className="ams-site-footer-tagline">Built with precision.<br />Delivered with integrity.</p>
           <p className="ams-site-footer-description">A Dubai contracting company delivering residential and commercial landmarks.</p>
         </div>
         <FooterLinkGroup title="Company" links={pageCompanyLinks} />
         <FooterLinkGroup title="Services" links={amsServices.map(service => ({ label: service.title, href: (page === 'services' ? '' : '/services') + '#' + service.id }))} />
         <div className="ams-site-footer-contact-column">
-          <FooterLinkGroup title="Vendors" links={vendorLinks} />
+          <FooterLinkGroup title="Vendors" titleHref="/vendors" links={vendorLinks} />
           <div className="ams-site-footer-group">
             <h3 className="ams-kicker">Contact</h3>
             <address>Dubai, UAE<br /><a href={'mailto:' + amsContact.email}>{amsContact.email}</a><br />{amsContact.phone}</address>

@@ -1,4 +1,5 @@
 'use client';
+import { RollingLabel } from '../rolling-label';
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { ArrowIcon } from '../arrow-icon';
@@ -111,7 +112,7 @@ export function VendorRegistrationForm() {
   if (complete) return <section className="ams-registration-section"><div className="ams-registration-outcome" ref={outcomeRef} tabIndex={-1} role="status">
     <span className="ams-reg-success-icon" aria-hidden="true">✓</span><p className="ams-kicker">APPLICATION RECEIVED</p><h2>Thank you for joining our network.</h2>
     <p>Your registration for <strong>{fields.companyName}</strong> and {complete.documents} document{complete.documents === 1 ? '' : 's'} have been received. Our team will review your application.</p>
-    <div className="ams-page-hero-actions"><a className="ams-button ams-button-primary ams-pill-button" href="/vendors">Back to Vendors <ArrowIcon /></a><a className="ams-button ams-button-outline" href="/sign-in">Vendor sign in <ArrowIcon /></a></div>
+    <div className="ams-page-hero-actions"><a className="ams-button ams-button-primary ams-pill-button" href="/vendors"><RollingLabel text="Back to Vendors" /> <ArrowIcon /></a><a className="ams-button ams-button-outline" href="/sign-in"><RollingLabel text="Vendor sign in" /> <ArrowIcon /></a></div>
   </div></section>;
 
   return <section className="ams-registration-section" aria-label="Vendor application form">
@@ -164,7 +165,7 @@ export function VendorRegistrationForm() {
           {issue && <div className="ams-reg-error" role="alert" tabIndex={-1} id="ams-reg-error"><p>{issue.message}</p>{(apiStatus === 409 || apiStatus === 401) && <a href="/sign-in">Sign in instead</a>}</div>}
           {busy && <p className="ams-reg-busy" role="status"><span className="ams-reg-spinner" aria-hidden="true" />{busy}</p>}
           <div className="ams-reg-actions">{step > 0 ? <button className="ams-reg-back" type="button" onClick={() => goTo(step - 1)} disabled={accountCreated}><ArrowIcon /> Back</button> : <span />}
-            <button className="ams-button ams-button-primary ams-pill-button" type="submit">{busy ? 'Please wait…' : step < 4 ? 'Continue' : accountCreated ? 'Retry failed uploads' : 'Submit application'}<ArrowIcon /></button>
+            <button className="ams-button ams-button-primary ams-pill-button" type="submit"><RollingLabel text={busy ? 'Please wait…' : step < 4 ? 'Continue' : accountCreated ? 'Retry failed uploads' : 'Submit application'} /><ArrowIcon /></button>
           </div>
         </fieldset>
         <noscript><p className="ams-reg-help">Enable JavaScript to complete this five-step registration.</p></noscript>

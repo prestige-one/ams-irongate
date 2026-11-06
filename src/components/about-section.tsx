@@ -1,3 +1,4 @@
+import { RollingLabel } from './rolling-label';
 import { ArchitecturalSplit } from './architectural-split';
 import { amsCompanyFigures } from '@/lib/company-figures';
 import { TitleFrame } from './title-frame';
@@ -13,7 +14,7 @@ export function AboutSection() {
           <p data-ams-reveal="up" data-ams-delay="220">We deliver residential and commercial developments across Dubai, turning ambitious designs into enduring structures.</p>
           <p data-ams-reveal="up" data-ams-delay="320">Engineering rigour. Disciplined site management. Craftsmanship in every detail.</p>
         </div>
-        <a className="ams-about-discover ams-button ams-button-primary" href="/about" data-ams-reveal="up" data-ams-delay="420">EXPLORE MORE <ArrowIcon /></a>
+        <a className="ams-about-discover ams-button ams-button-primary" href="/about" data-ams-reveal="up" data-ams-delay="420"><RollingLabel text="EXPLORE MORE" /> <ArrowIcon /></a>
     </ArchitecturalSplit>
     <AnimatedFigures figures={amsCompanyFigures} />
     <div className="ams-about-baseline"><p>Engineering <span>/</span> Construction <span>/</span> Craftsmanship</p><span className="ams-about-rule" aria-hidden="true" /></div>

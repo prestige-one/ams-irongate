@@ -1,0 +1,7 @@
+.ams-roll-label{position:relative;display:inline-block;overflow:hidden;vertical-align:middle;line-height:1.25}
+:is(.ams-enquire-button,.ams-button)>.ams-roll-label{font-size:inherit;line-height:1.25;color:inherit}
+.ams-roll-label-line{display:block;white-space:nowrap;transition:transform .55s cubic-bezier(.22,1,.36,1)}
+.ams-roll-label-copy{position:absolute;left:0;top:100%}
+@media(prefers-reduced-motion:no-preference){:is(.ams-enquire-button,.ams-button):not(:disabled):not([aria-disabled="true"]):focus-visible .ams-roll-label-line{transform:translateY(-100%)}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){:is(.ams-enquire-button,.ams-button):not(:disabled):not([aria-disabled="true"]):hover .ams-roll-label-line{transform:translateY(-100%)}}
+@media(prefers-reduced-motion:reduce){.ams-roll-label-line{transition:none}}

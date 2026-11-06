@@ -10,6 +10,7 @@
 .ams-site-footer-description{font-size:13px;line-height:1.8;color:#9a9a94;max-width:340px;margin:0;text-wrap:pretty}
 .ams-site-footer-group{min-width:0}
 .ams-site-footer-group .ams-kicker{letter-spacing:.2em;line-height:1.5;margin:0 0 22px}
+.ams-site-footer-group .ams-kicker>a{color:inherit;font:inherit;letter-spacing:inherit}
 .ams-site-footer-group ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
 .ams-site-footer-group li{min-width:0;font-size:13px;line-height:1.6}
 .ams-site-footer-group a,.ams-site-footer-group address{font-size:13px;line-height:1.8;font-style:normal;color:#a8a8a2;transition:color .2s;text-wrap:pretty}

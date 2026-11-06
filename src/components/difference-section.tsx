@@ -1,4 +1,5 @@
 'use client';
+import { RollingLabel } from './rolling-label';
 import { TitleFrame } from './title-frame';
 
 
@@ -60,7 +61,7 @@ export function DifferenceSection() {
         </article>)}
       </div>
       <div className="ams-approach" data-ams-reveal="up">
-        <a className="ams-button ams-button-primary ams-pill-button ams-approach-button" href="/about#ams-values">Discover our approach <ArrowIcon /></a>
+        <a className="ams-button ams-button-primary ams-pill-button ams-approach-button" href="/about#ams-values"><RollingLabel text="Discover our approach" /> <ArrowIcon /></a>
       </div>
     </div>
   </section>;
